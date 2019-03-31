@@ -2,10 +2,13 @@ import Butterfly from '@iredium/butterfly'
 import config from '~/src/config'
 import request = require('supertest')
 
-describe('GET /users', (): void => {
-  it('should respond ok', async (): Promise<void> => {
-    const butterfly = new Butterfly(config)
-    butterfly.boot()
+const butterfly = new Butterfly(config)
+butterfly.boot()
+
+describe('Routes Test', (): void => {
+  it('should respond ok for GET /users', async (): Promise<void> => {
     await request(butterfly.app).get('/users').expect(200)
   })
 })
+
+butterfly.close()
