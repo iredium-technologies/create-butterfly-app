@@ -7,7 +7,7 @@ butterfly.boot()
 
 describe('Routes Test', (): void => {
   it('should respond ok for GET /users', async (): Promise<void> => {
-    await request(butterfly.app).get('/users').expect(200)
+    request(butterfly.app).get('/users').expect(200)
   })
 })
 
