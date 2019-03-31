@@ -33,7 +33,7 @@
     "eslint"
   ],
   "dependencies": {
-    "@iredium/butterfly": "^0.0.17"
+    "@iredium/butterfly": "^0.0.18"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.3.4",
