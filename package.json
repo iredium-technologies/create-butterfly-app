@@ -1,6 +1,6 @@
 {
   "name": "create-butterfly-app",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Butterfly App Template",
   "bin": "cli.js",
   "files": [
